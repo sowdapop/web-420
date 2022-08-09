@@ -1,0 +1,26 @@
+{
+  "name": "web-420",
+  "version": "1.0.0",
+  "description": "WEB 420 RESTful APIs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sowdapop/web-420.git"
+  },
+  "author": "Kayla McDanel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sowdapop/web-420/issues"
+  },
+  "homepage": "https://github.com/sowdapop/web-420#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "express": "4.17.1"
+  }
+}
