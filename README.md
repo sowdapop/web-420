@@ -1,2 +1,5 @@
-# web-420
-WEB 420 RESTful APIs
+# WEB 420 RESTful APIs
+## Contributors 
+* Professor Kumar
+* Kayla McDanel
+  
