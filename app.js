@@ -1,3 +1,9 @@
+//Title: app.js
+//Author: Kayla McDanel
+//Date: 08 17 2022
+//Description: OpenAPI assignment
+
+
 const express = require('express')
 const http = require('http')
 const swaggerJSDoc = require('swagger-jsdoc')
