@@ -9,6 +9,7 @@ const http = require('http')
 const swaggerJSDoc = require('swagger-jsdoc')
 const swaggerUi = require('swagger-ui-express')
 const mongoose = require('mongoose')
+const ComposerAPI = require('./routes/mcdanel-composer-routes')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,7 +25,7 @@ const options = {
             version: '1.0.0',
         },
     },
-    apis: ['./routes/*.js'], // files containing annotations for the OpenAPI Specification
+    apis: ['./routes/mcdanel-composer-routes'], // files containing annotations for the OpenAPI Specification
 };
 
 const openapiSpecification = swaggerJSDoc(options);
