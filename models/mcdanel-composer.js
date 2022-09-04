@@ -6,9 +6,9 @@
 const mongoose = require ('mongoose')
 const Schema = require.Schema
 
-const composerSchema = new Schema ({
-    firstName: String,
-    lastName: String
+let composerSchema = new mongoose.Schema({
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
 });
 
-module.exports = mongoose.model('Composer', composerSchema)
+module.exports = mongoose.model("Composer", composerSchema)

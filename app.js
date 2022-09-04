@@ -30,6 +30,7 @@ const options = {
 
 const openapiSpecification = swaggerJSDoc(options);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
+app.use('/api', ComposerAPI);
 
 
 app.listen(PORT, () => {

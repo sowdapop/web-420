@@ -7,7 +7,6 @@ const express = require('express')
 const router = express.Router()
 const Composer = require('../models/mcdanel-composer')
 
-
 // findAllComposers
 //@openapi
 //   /composers:
@@ -23,7 +22,7 @@ const Composer = require('../models/mcdanel-composer')
 //         '501':    # status code
 //           description: MongoDB exceptions
 
-router.get('/composers', async(req, res) => {
+router.get('/api/composers', async(req, res) => {
     try {
         Composer.find({}, function(err, composers) {
             if (err) {
@@ -66,7 +65,7 @@ router.get('/composers', async(req, res) => {
 //     '501':    # status code
 //       description: MongoDB exceptions
 
-router.get('/composers/:id', async(req, res) => {
+router.get('/api/composers/:id', async(req, res) => {
     try {
         Composer.findOne({'_id': req.params.id}, function(err, composers) {
             if (err) {
@@ -105,7 +104,7 @@ router.get('/composers/:id', async(req, res) => {
 //         '501':    # status code
 //           description: MongoDB exceptions
 
-router.post('/composers', async(req, res) => {
+router.post('/api/composers', async(req, res) => {
     try {
         const newComposer = {
             firstName: req.body.type,
