@@ -34,6 +34,6 @@ app.use('/api', ComposerAPI);
 
 
 app.listen(PORT, () => {
-    console.log("Application started and listening on port" + PORT);
+    console.log("Application started and listening on Port " + PORT);
 });
 

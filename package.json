@@ -22,7 +22,7 @@
   "dependencies": {
     "bluebird": "3.7.2",
     "express": "4.17.1",
-    "mongoose": "^6.5.4",
+    "mongoose": "^5.12.3",
     "swagger-jsdoc": "^6.1.0",
     "swagger-ui-express": "^4.1.6"
   }
