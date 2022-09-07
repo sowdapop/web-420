@@ -25,7 +25,7 @@ const options = {
             version: '1.0.0',
         },
     },
-    apis: ['./routes/mcdanel-composer-routes'], // files containing annotations for the OpenAPI Specification
+    apis: ['./routes/*.js'], // files containing annotations for the OpenAPI Specification
 };
 
 const openapiSpecification = swaggerJSDoc(options);
@@ -36,3 +36,4 @@ app.use('/api', ComposerAPI);
 app.listen(PORT, () => {
     console.log("Application started and listening on port" + PORT);
 });
+
