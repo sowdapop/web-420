@@ -1,4 +1,9 @@
-const mongoose = require("mongoose")
+// Title: mcdanel-person.js
+// Author: Kayla McDanel
+// Date: 09/07/2022
+// Description: Mongoose model for person API
+
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 let roleSchema = new Schema({
