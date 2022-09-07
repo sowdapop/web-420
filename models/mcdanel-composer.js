@@ -4,9 +4,9 @@
 // Description: Mongoose model for composer API
 
 const mongoose = require ('mongoose')
-const Schema = require.Schema
+const Schema = mongoose.Schema
 
-let composerSchema = new mongoose.Schema({
+let composerSchema = new Schema({
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
 });
