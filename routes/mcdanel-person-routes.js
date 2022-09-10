@@ -1,11 +1,26 @@
-// Title: mcdanel-person-routes.js
-// Author: Kayla McDanel
-// Date: 09/07/2022
-// Description: Routes for person API
+/**  Title: mcdanel-person-routes.js
+* Author: Kayla McDanel
+* Date: 09/07/2022
+* Description: Routes for person API*/
 
 const express = require('express')
 const router = express.Router()
 const Person = require ('../models/mcdanel-person')
+
+/** findAllPersons
+*@openapi
+* /api/persons:
+*   get:
+*   summary: Returns a list of all people
+*   description: |
+*          Returns a list of all people
+* responses:
+*   '200':    # status code
+*      description: A JSON array of people's names          
+*   '500':    # status code
+*      description: Server exceptions   
+*   '501':    # status code
+*      description: MongoDB exceptions*/
 
 router.get('/api/persons', async(req, res) => {
     try {
@@ -27,6 +42,21 @@ router.get('/api/persons', async(req, res) => {
         })
     }
 })
+
+/**createPerson
+* @openapi
+*  /api/persons:
+*     post:
+*      summary: Creates a new person
+*      description: |
+*        Creates and adds a new person to the catalog.
+*      responses:
+*        '200':    # status code
+*          description: A JSON array for new composer.
+*        '500':    # status code
+*          description: Server exceptions
+*        '501':    # status code
+*          description: MongoDB exceptions*/
 
 router.post('/api/persons', async(req, res) => {
     try {
