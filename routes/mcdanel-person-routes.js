@@ -28,7 +28,7 @@ router.get('/api/persons', async(req, res) => {
             if (err) {
                 console.log(err);
                 res.status(501).send({
-                    'message': `MongoDB Exeception: ${err}`
+                    'message': `MongoDB Exception: ${err}`
                 })
             } else {
                 console.log(persons);
@@ -72,7 +72,7 @@ router.post('/api/persons', async(req, res) => {
             if (err) {
                 console.log(err);
                 res.status(501).send({
-                    'message': `MongoDB Exeception: ${err}`
+                    'message': `MongoDB Exception: ${err}`
                 })
             } else {
                 console.log(person);
